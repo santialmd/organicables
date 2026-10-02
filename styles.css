@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222222;
+}
+
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 25px;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.inicio {
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: white;
+}
+
+.inicio h2 {
+  font-size: 35px;
+}
+
+.inicio p {
+  font-size: 18px;
+  line-height: 1.6;
+  <!-- se me junataban mucho los renglones-->
+}
+
+.inicio img {
+  width: 100%;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.boton:hover {
+  background-color: #1d4ed8;
+}
+
+.seccion {
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.seccion h2 {
+  font-size: 30px;
+}
+
+.seccion p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.tarjeta {
+  padding: 20px;
+  border: 2px solid #dddddd;
+  background-color: #fafafa;
+}
+
+.tarjeta h3 {
+  font-size: 22px;
+}
+
+.producto {
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: #e5e7eb;
+}
+
+.producto img {
+  width: 100%;
+}
+
+.producto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.producto span {
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 30px;
+  margin-top: 50px;
+}
