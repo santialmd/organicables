@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrganiCables</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #222222;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 25px;
+        }
+
+        .contenedor {
+            width: 90%;
+            margin: auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .inicio {
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            background-color: white;
+        }
+
+        .inicio h2 {
+            font-size: 35px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .inicio img {
+            width: 100%;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background-color: #1d4ed8;
+        }
+
+        .seccion {
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+        }
+
+        .seccion h2 {
+            font-size: 30px;
+        }
+
+        .seccion p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            padding: 20px;
+            border: 2px solid #dddddd;
+            background-color: #fafafa;
+        }
+
+        .tarjeta h3 {
+            font-size: 22px;
+        }
+
+        .producto {
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            background-color: #e5e7eb;
+        }
+
+        .producto img {
+            width: 100%;
+        }
+
+        .producto p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .producto span {
+            font-weight: bold;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 768px) {
+            .inicio,
+            .producto {
+                grid-template-columns: 1fr;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .inicio h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h1>OrganiCables</h1>
+            <p>Ordena tus cables. Organiza tu espacio.</p>
+
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#problema">Problema</a>
+                <a href="#producto">Producto</a>
+                <a href="#caracteristicas">Características</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="inicio" class="inicio">
+
+            <div>
+                <h2>Decile chau a los cables desordenados</h2>
+
+                <p>
+                    OrganiCables es un organizador de cables pensado para
+                    mantener tu escritorio ordenado y evitar que los cables
+                    se mezclen o se caigan.
+                </p>
+
+                <a class="boton" href="#producto">
+                    Conocé el producto
+                </a>
+            </div>
+
+            <div>
+                <img
+                    src="https://cdn.creativefabrica.com/2019/03/Monogram-OC-Logo-Design-by-Greenlines-Studios-580x386.jpg"
+                    alt="Organizador de cables">
+            </div>
+
+        </div>
+
+
+        <div id="problema" class="seccion">
+
+            <h2>¿Cuál es el problema?</h2>
+
+            <p>
+                Muchas personas tienen varios cables sobre el escritorio.
+                Esto genera desorden, dificulta encontrar cada cable y puede
+                hacer que se caigan detrás del escritorio.
+            </p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Desorden</h3>
+
+                    <p>
+                        Los cables quedan mezclados y ocupan espacio
+                        innecesariamente.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Pérdida de tiempo</h3>
+
+                    <p>
+                        Encontrar el cable correcto puede ser complicado
+                        cuando están todos juntos.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Cables que se caen</h3>
+
+                    <p>
+                        Al desconectarlos pueden terminar debajo o detrás
+                        del escritorio.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="producto" class="producto">
+
+            <div>
+                <img
+                    src="https://cdnx.jumpseller.com/easytech-store/image/27741272/thumb/1600/1600?1664386386"
+                    alt="Producto OrganiCables">
+            </div>
+
+            <div>
+
+                <h2>La solución: OrganiCables</h2>
+
+                <p>
+                    OrganiCables permite mantener los cables organizados
+                    y siempre al alcance. Su diseño busca ocupar poco espacio
+                    y adaptarse a distintos escritorios.
+                </p>
+
+                <p>
+                    Es una solución
+                    <span>simple, práctica y económica</span>
+                    para un problema cotidiano.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div id="caracteristicas" class="seccion">
+
+            <h2>Características</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Orden</h3>
+
+                    <p>
+                        Ayuda a mantener los cables separados y organizados.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Práctico</h3>
+
+                    <p>
+                        Permite tener los cables cerca cuando los necesitas.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Personalizable</h3>
+
+                    <p>
+                        Puede fabricarse en diferentes diseños y colores.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="seccion">
+
+            <h2>¿Por qué elegir OrganiCables?</h2>
+
+            <ul>
+                <li>Ayuda a mantener el escritorio ordenado.</li>
+                <li>Es fácil de utilizar.</li>
+                <li>Ocupa poco espacio.</li>
+                <li>Es una solución para un problema cotidiano.</li>
+                <li>Puede personalizarse.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="seccion">
+
+            <h2>Conocé nuestro proyecto</h2>
+
+            <p>
+                Somos un grupo de estudiantes que desarrolló OrganiCables
+                como una propuesta para solucionar un problema cotidiano
+                mediante un producto simple y accesible.
+            </p>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/kUUCT2Ws6i4?si=L5d2oCu5k_T4v4SW"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Una forma simple de mantener tus cables organizados.
+        </p>
+
+        <p>
+            Proyecto escolar - 2026
+        </p>
+
+        <p>
+            Creadores: Santiago Almada, Joaquín Suarez, Corsi Bautista,
+            Santino y Rudi Bautista.
+        </p>
+
+    </footer>
+
+</body>
+</html>
